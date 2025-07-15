@@ -1,9 +1,9 @@
 import io
-from PIL import Image
 
-import pytesseract
 import pdf2image
+import pytesseract
 from celery import Celery
+from PIL import Image
 
 from app.settings import Settings
 

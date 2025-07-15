@@ -1,9 +1,9 @@
 import logging
 
-from fastapi import FastAPI, UploadFile, status, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, status
 
-from app.tasks import process_ocr
 from app.models import CreateTaskResponse, OCRResponse
+from app.tasks import process_ocr
 
 logging.basicConfig(
     level=logging.INFO,
