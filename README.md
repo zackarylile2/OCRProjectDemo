@@ -1,6 +1,7 @@
 **OCRProjectDemo**
 
 A minimal microservice for extracting text from PDFs and images using Tesseract OCR. Built with FastAPI, Celery, Redis, and Docker.
+NOTE: THIS IS NOT DESIGNED FOR PRODUCTION USE I ONLY WROTE THIS AS A EXAMPLE PROJECT FOR MY RESUME
 Features
 
     Upload a PDF or image file
