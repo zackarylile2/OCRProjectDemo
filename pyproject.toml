@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ocrprojectdemo"
+version = "0.1.0"
+description = "Simple demo project to show a small microservice for reading OCR from a file"
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = { extras = ["standard"], version = ">=0.116.1,<0.117.0" }
+pytesseract = ">=0.3.13,<0.4.0"
+pdf2image = ">=1.17.0,<2.0.0"
+celery = { extras = ["redis"], version = ">=5.5.3,<6.0.0" }
+redis = ">=4.5.2,<6.0.0"
+pydantic-settings = ">=2.10.1,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.3.0"
+isort = "^5.12.0"
+flake8 = "^7.0.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

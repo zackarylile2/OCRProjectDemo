@@ -1,0 +1,25 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Env files
+.env
+.env.*
+
+# Virtual environments
+venv/
+
+# git files
+.git/
+
+# Docker files
+*.log
+*.tar
+docker-compose.override.yml
+Dockerfile*
+
+# vscode files
+.vscode/
+
+# Test files
+tests/__pycache__/
