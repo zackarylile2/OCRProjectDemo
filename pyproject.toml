@@ -1,7 +1,8 @@
 [tool.poetry]
-name = "ocrprojectdemo"
+name = "ocrproject"
 version = "0.1.0"
-description = "Simple demo project to show a small microservice for reading OCR from a file"
+description = "Demo OCR microservice"
+authors = ["you@example.com"]
 readme = "README.md"
 packages = [{ include = "app" }]
 
