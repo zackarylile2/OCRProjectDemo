@@ -38,7 +38,7 @@ async def get_ocr_result(task_id: str):
     elif task.state == "FAILURE":
         LOGGER.error(f"Task {task_id} failed: {task.info}")
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Task failed!"
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Task failed"
         )
     else:
         raise HTTPException(
